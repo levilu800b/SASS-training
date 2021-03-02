@@ -1,0 +1,13 @@
+
+/// Function to get color from main-palette
+/// @param {key} color key from the main-palette
+///
+/// @returns {color} color from the main-palette
+@function get-colour($key) {
+    @if map-has-key($main-palette, $key){
+        @return map-get($main-palette, $key);
+    }
+    @else {
+        @error 'The given colour is not available in the main palette';
+    }
+}

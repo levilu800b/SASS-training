@@ -1,0 +1,26 @@
+//Colour variables
+$primaryColour: #282c34;
+$secondaryColour: #61dafb;
+$success: green;
+$warning: yellow;
+$danger: red;
+
+$white: #ffffff;
+$black: #000000;
+$medium-gray: lighten($black, 25); //uses a function called lighten to adjust the brighness %
+$dark-gary: lighten($black, 50);
+
+//defining colour palette
+$main-palette: (
+    primary: lighten($black, 25),
+    secondary: #61dafb,
+    success: green,
+    danger: red
+);
+
+
+$button-palette: (
+    primary: #282c34,
+    secondary: #61dafb,
+    success: green
+);

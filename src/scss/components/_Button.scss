@@ -1,0 +1,29 @@
+//Inheritance
+%button-shared {
+    border: 1px solid $white;
+    background-color: lighten($black, 50);
+    padding: 10px 20px;
+    color: $black;
+    font-family: $font-serif;
+
+    &:hover {
+        transform: scale(2);
+    }
+}
+
+
+button {
+    @extend %button-shared; //calling the inheritance class
+
+    //success button
+    &.success{
+        border-color: get-colour('success');
+        background-color: get-colour('success');
+    }
+
+    //danger button
+    &.danger{
+        border-color: get-colour('danger');
+        background-color: get-colour('danger');
+    }
+}
